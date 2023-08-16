@@ -3,6 +3,8 @@ package com.ktds.myspringboot.runner;
 import com.ktds.myspringboot.dto.Customer;
 import com.ktds.myspringboot.property.MybootProperties;
 import jakarta.annotation.Resource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
@@ -26,19 +28,26 @@ public class MyRunner implements ApplicationRunner {
     @Resource(name="myCustomer") // Bean의 이름으로 찾는다. Autowired + Qualifier 합친거
     Customer customer;
 
+    private Logger logger = LoggerFactory.getLogger(MyRunner.class);
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("VM Argument = " + args.containsOption("foo")); // false
-        System.out.println("Program Argument = " + args.containsOption("bar")); // true
-        System.out.println("******환경변수 문자열 설정*********");
-        System.out.println("myboot.name : " + name);
-        System.out.println("myboot.age : " + age);
+        logger.debug("Logger 구현 클래스 이름 = {} (중괄호 안으로 값이 들어감)", logger.getClass().getName());
 
-        System.out.println("******환경변수 property 설정*********");
-        System.out.println("properties.getName() : " + properties.getName());
-        System.out.println("properties.getAge() : " + properties.getAge());
+        logger.info("VM Argument = " + args.containsOption("foo")); // false
+        logger.info("Program Argument = " + args.containsOption("bar")); // true
+        logger.info("******환경변수 문자열 설정*********");
+        logger.info("myboot.name : " + name);
+        logger.info("myboot.age : " + age);
 
-        System.out.println("******Profile : myCustomer 빈에 설정된 내용 *********");
-        System.out.println("customer bean : " + customer);
+        logger.debug("******환경변수 property 설정*********");
+        logger.debug("properties.getName() : " + properties.getName());
+        logger.debug("properties.getAge() : " + properties.getAge());
+
+        logger.debug("******Profile : myCustomer 빈에 설정된 내용 *********");
+        logger.debug("customer bean : " + customer);
+
+        logger.debug("----------------------");
+        logger.debug("logger properties.getName() : " + properties.getName());
     }
 }
