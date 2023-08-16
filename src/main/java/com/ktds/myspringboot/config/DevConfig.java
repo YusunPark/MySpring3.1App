@@ -21,6 +21,10 @@ public class DevConfig {
     @Bean("myCustomer")
     @Scope(value = "singleton")
     public Customer customer() {
-        return new Customer("DevMode",100);
+        return Customer.builder() // CustomerBuilder 를 사용하면 param순서를 생각하지 않아도 된다.
+                .name("DevMode")
+                .age(100)
+                .build();
+//        return new Customer("DevMode",100);
     }
 }
