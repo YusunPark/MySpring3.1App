@@ -10,10 +10,15 @@ public class Application {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(Application.class, args);
+//		SpringApplication.run(Application.class, args);
 //		SpringApplication application = new SpringApplication(Application.class);
 //		application.setWebApplicationType(WebApplicationType.NONE);
 //		application.run(args);
+
+		SpringApplication application = new SpringApplication(Application.class);
+		application.setWebApplicationType(WebApplicationType.SERVLET);
+		application.run(args);
+
 	}
 
 
