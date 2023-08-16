@@ -453,3 +453,84 @@
 2023-08-16T16:35:29.839+09:00 DEBUG 9604 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : ----------------------
 2023-08-16T16:35:29.839+09:00 DEBUG 9604 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : logger properties.getName() : 스프링 DevMode
 2023-08-16T16:35:29.839+09:00  INFO 9604 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-16T16:37:40.328+09:00  INFO 9604 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16T16:39:13.420+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.Application        : Starting Application using Java 17 with PID 6812 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-16T16:39:13.423+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.Application        : Running with Spring Boot v3.1.2, Spring v6.0.10
+2023-08-16T16:39:13.423+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.Application        : The following 1 profile is active: "dev"
+2023-08-16T16:39:13.462+09:00  INFO 6812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-16T16:39:13.462+09:00  INFO 6812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-16T16:39:14.097+09:00  INFO 6812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16T16:39:14.157+09:00  INFO 6812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 JPA repository interfaces.
+2023-08-16T16:39:14.830+09:00  INFO 6812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-16T16:39:14.838+09:00  INFO 6812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-16T16:39:14.839+09:00  INFO 6812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-16T16:39:14.902+09:00  INFO 6812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-16T16:39:14.902+09:00  INFO 6812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1440 ms
+2023-08-16T16:39:14.933+09:00  INFO 6812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-16T16:39:15.076+09:00  INFO 6812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b453c3b1-6eaa-4d87-a189-c66ba18c1ade user=SA
+2023-08-16T16:39:15.077+09:00  INFO 6812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-16T16:39:15.086+09:00  INFO 6812 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b453c3b1-6eaa-4d87-a189-c66ba18c1ade'
+2023-08-16T16:39:15.183+09:00  INFO 6812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-16T16:39:15.230+09:00  INFO 6812 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-16T16:39:15.232+09:00  INFO 6812 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-16T16:39:15.329+09:00  INFO 6812 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-16T16:39:15.424+09:00  INFO 6812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16T16:39:15.518+09:00  INFO 6812 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-16T16:39:15.679+09:00  INFO 6812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-16T16:39:15.682+09:00  INFO 6812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16T16:39:15.762+09:00  WARN 6812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16T16:39:16.032+09:00  WARN 6812 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-16T16:39:16.122+09:00  INFO 6812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-16T16:39:16.146+09:00  INFO 6812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16T16:39:16.155+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.Application        : Started Application in 3.062 seconds (process running for 3.397)
+2023-08-16T16:39:16.157+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : Logger 구현 클래스 이름 = ch.qos.logback.classic.Logger (중괄호 안으로 값이 들어감)
+2023-08-16T16:39:16.157+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : VM Argument = false
+2023-08-16T16:39:16.157+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : Program Argument = true
+2023-08-16T16:39:16.157+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : ******환경변수 문자열 설정*********
+2023-08-16T16:39:16.157+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : myboot.name : 스프링 DevMode
+2023-08-16T16:39:16.158+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : myboot.age : 49
+2023-08-16T16:39:16.158+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : ******환경변수 property 설정*********
+2023-08-16T16:39:16.158+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : properties.getName() : 스프링 DevMode
+2023-08-16T16:39:16.158+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : properties.getAge() : 50
+2023-08-16T16:39:16.158+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : ******Profile : myCustomer 빈에 설정된 내용 *********
+2023-08-16T16:39:16.158+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : customer bean : Customer(name=DevMode, age=100)
+2023-08-16T16:39:16.158+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : ----------------------
+2023-08-16T16:39:16.158+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.runner.MyRunner    : logger properties.getName() : 스프링 DevMode
+2023-08-16T16:39:23.675+09:00  INFO 6812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2023-08-16T16:39:23.683+09:00  INFO 6812 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-16T16:39:23.689+09:00  INFO 6812 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16T16:39:23.897+09:00  WARN 6812 --- [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-08-16T16:39:23.897+09:00  INFO 6812 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-16T16:39:23.901+09:00  INFO 6812 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-16T16:39:23.956+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.Application        : Starting Application using Java 17 with PID 6812 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-16T16:39:23.956+09:00 DEBUG 6812 --- [restartedMain] com.ktds.myspringboot.Application        : Running with Spring Boot v3.1.2, Spring v6.0.10
+2023-08-16T16:39:23.956+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.Application        : The following 1 profile is active: "dev"
+2023-08-16T16:39:24.077+09:00  INFO 6812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16T16:39:24.078+09:00  INFO 6812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-08-16T16:39:24.165+09:00  INFO 6812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-16T16:39:24.166+09:00  INFO 6812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-16T16:39:24.166+09:00  INFO 6812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-16T16:39:24.178+09:00  INFO 6812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-16T16:39:24.178+09:00  INFO 6812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2023-08-16T16:39:24.187+09:00  INFO 6812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-08-16T16:39:24.189+09:00  INFO 6812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:18cc4996-6cab-4080-b757-4e3bf72bd978 user=SA
+2023-08-16T16:39:24.189+09:00  INFO 6812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-08-16T16:39:24.190+09:00  INFO 6812 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:18cc4996-6cab-4080-b757-4e3bf72bd978'
+2023-08-16T16:39:24.207+09:00  INFO 6812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-16T16:39:24.212+09:00  INFO 6812 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-16T16:39:24.212+09:00  INFO 6812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-16T16:39:24.215+09:00  INFO 6812 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-16T16:39:24.220+09:00  INFO 6812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-16T16:39:24.220+09:00  INFO 6812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16T16:39:24.236+09:00  WARN 6812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-16T16:39:24.282+09:00  WARN 6812 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-16T16:39:24.309+09:00  INFO 6812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-16T16:39:24.315+09:00  INFO 6812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-16T16:39:24.317+09:00  INFO 6812 --- [restartedMain] com.ktds.myspringboot.Application        : Started Application in 0.384 seconds (process running for 11.56)
+2023-08-16T16:39:24.319+09:00  INFO 6812 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-16T16:39:28.804+09:00  INFO 6812 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (7 additions, 0 deletions, 1 modification)
+2023-08-16T16:39:28.812+09:00  INFO 6812 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-16T16:39:28.814+09:00  INFO 6812 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-16T16:39:29.027+09:00  WARN 6812 --- [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-08-16T16:39:29.027+09:00  INFO 6812 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-08-16T16:39:29.028+09:00  INFO 6812 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
