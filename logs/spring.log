@@ -1,0 +1,18 @@
+2023-08-16T16:23:36.285+09:00  INFO 12676 --- [restartedMain] com.ktds.myspringboot.Application        : Starting Application using Java 17 with PID 12676 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-16T16:23:36.301+09:00  INFO 12676 --- [restartedMain] com.ktds.myspringboot.Application        : The following 1 profile is active: "dev"
+2023-08-16T16:23:36.506+09:00  INFO 12676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-16T16:23:36.506+09:00  INFO 12676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-16T16:23:41.483+09:00  INFO 12676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-16T16:23:41.509+09:00  INFO 12676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-08-16T16:23:42.242+09:00  INFO 12676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-16T16:23:42.256+09:00  INFO 12676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-16T16:23:42.256+09:00  INFO 12676 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-16T16:23:42.325+09:00  INFO 12676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-16T16:23:42.325+09:00  INFO 12676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5818 ms
+2023-08-16T16:23:42.353+09:00  INFO 12676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-16T16:23:42.602+09:00  INFO 12676 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b93a63d1-7e63-47ec-91df-9f75861deacd user=SA
+2023-08-16T16:23:42.606+09:00  INFO 12676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-16T16:23:42.615+09:00  INFO 12676 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b93a63d1-7e63-47ec-91df-9f75861deacd'
+2023-08-16T16:23:43.311+09:00  INFO 12676 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-16T16:23:53.612+09:00  INFO 12676 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-16T16:23:53.627+09:00  INFO 12676 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer

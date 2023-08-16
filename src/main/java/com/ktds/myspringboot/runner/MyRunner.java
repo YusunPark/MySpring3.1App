@@ -20,7 +20,10 @@ public class MyRunner implements ApplicationRunner {
     @Autowired
     MybootProperties properties;
 
-    @Resource(name="myCustomer") // Autowired 이외에 등록된 bean을 가져오는 법
+//    @Autowired // Autowired는 클래스의 type으로 찾기에, 타입이 같은게 있으면 qualifier 사용해야한다.
+//    Customer customer;
+    // Autowired 방법 말고 등록된 bean을 가져오는 법
+    @Resource(name="myCustomer") // Bean의 이름으로 찾는다. Autowired + Qualifier 합친거
     Customer customer;
 
     @Override
