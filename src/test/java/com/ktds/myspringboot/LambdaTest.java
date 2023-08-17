@@ -1,5 +1,6 @@
 package com.ktds.myspringboot;
 
+import com.ktds.myspringboot.dto.Customer;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -19,10 +20,49 @@ public class LambdaTest {
         });
 
         // Lambda Expression
+        // forEach(Consumer)
         stringList.forEach(val -> System.out.println("val = " + val));
+        // Message Reference
+        stringList.forEach(System.out::println);
 
     }
 
+    @Test
+    void consumer_test() {
+        //Immutable List (dto.Customer이용)
+        List<Customer> customerList =
+                List.of(new Customer("boot", 10),
+                        new Customer("msa", 20),
+                        new Customer("ktds", 50),
+                        new Customer("wifi", 70));
+
+        //1. Anonymous Inner Class
+        customerList.forEach(new Consumer<Customer>() {
+            @Override
+            public void accept(Customer customer) {
+                System.out.println(customer);
+            }
+        });
+        //2. Lambda Expression
+        customerList.forEach(cust -> System.out.println(cust));
+        //3. Method Reference
+        customerList.forEach(System.out::println);
+
+        //Customer의 age 합계를 계산하기 (age >= 50)
+        int sumOfAge =
+                customerList.stream() //Stream<Customer>
+                        .filter(customer -> customer.getAge() >= 50) //Stream<Customer> ->Predicate(return boolean)
+                        //.mapToInt(customer -> customer.getAge()) // IntStream<Integer> -> Function(입출력 있고 + 타입이 다른경우)
+                        .mapToInt(Customer::getAge)//IntStream -> 위와 동일한 코드임
+                        .sum();
+        System.out.println("나이 합계 " + sumOfAge);
+
+        int asInt = customerList.stream()
+                .mapToInt(Customer::getAge)
+                .max()
+                .getAsInt();
+        System.out.println("asInt = " + asInt);
+    }
     @Test
     void runnable() {
         // Anonymous Inner Class -> 자신은 이름이 없으니까 부모의 이름을 쓴다.
