@@ -1,8 +1,7 @@
 package com.ktds.myspringboot.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -10,6 +9,9 @@ import java.util.List;
 @Table(name = "account") // table네임 지정, 안하면 account_entity라고 함
 @Getter
 @Setter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@Builder
 public class AccountEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
