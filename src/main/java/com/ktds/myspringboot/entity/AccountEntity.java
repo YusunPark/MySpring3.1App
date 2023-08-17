@@ -12,11 +12,12 @@ import java.util.List;
 @Setter
 public class AccountEntity {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true, nullable = false)
     private String username;
 
     private String password;
+
 }
