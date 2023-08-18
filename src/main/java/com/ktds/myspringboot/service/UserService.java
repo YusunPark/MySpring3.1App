@@ -67,4 +67,18 @@ public class UserService {
         return userResDtoStream.collect(toList());
     }
 
+
+    public UserResDto updateUser(String email, UserReqDto userReqDto) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() ->
+                        new BusinessException(email + " User Not Found", HttpStatus.NOT_FOUND));
+
+        // setter 호출 : 정보 업데이트 (email은 변경 불가능)
+        // save 등을 안하고 setter만 처리해도 update가 된다 -> 더티체킹 -> 전제조건, Transactional이 되어야한다.
+        // put -> 모든 항목을 수정
+        // fetch -> 부분 수정
+        user.setName(userReqDto.getName());
+
+        return modelMapper.map(user, UserResDto.class);
+    }
 }

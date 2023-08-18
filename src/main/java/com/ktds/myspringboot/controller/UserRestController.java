@@ -4,6 +4,7 @@ import com.ktds.myspringboot.dto.UserReqDto;
 import com.ktds.myspringboot.dto.UserResDto;
 import com.ktds.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,4 +38,11 @@ public class UserRestController {
     public List<UserResDto> getUser() {
         return userService.getUsers();
     }
+
+    @PatchMapping("/{email}")
+    public UserResDto updateUser(@PathVariable String email,
+                                 @RequestBody UserReqDto userReqDto){
+        return userService.updateUser(email, userReqDto);
+    }
+
 }
