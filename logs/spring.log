@@ -11888,3 +11888,1098 @@ Content-Type: application/json
 2023-08-18T16:21:42.464+09:00 DEBUG 13944 --- [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet                : POST "/actuator/loggers/ROOT", parameters={}
 2023-08-18T16:21:42.464+09:00 DEBUG 13944 --- [http-nio-8080-exec-6] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped to Actuator web endpoint 'loggers-name'
 2023-08-18T16:21:42.465+09:00 DEBUG 13944 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{configuredLevel=WARN}]
+2023-08-18T16:25:27.730+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:25:27.734+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:25:27.771+09:00  INFO 2524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-18T16:25:27.771+09:00  INFO 2524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-18T16:25:28.797+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:25:28.843+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:25:29.540+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:25:29.551+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:25:29.552+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:25:29.604+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:25:29.605+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1832 ms
+2023-08-18T16:25:29.695+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-08-18T16:25:29.778+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6a347bd4
+2023-08-18T16:25:29.780+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-08-18T16:25:29.791+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:25:29.947+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:25:29.998+09:00  INFO 2524 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-18T16:25:30.001+09:00  INFO 2524 --- [restartedMain] o.h.c.Environment                        : HHH000406: Using bytecode reflection optimizer
+2023-08-18T16:25:30.143+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:25:30.264+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:25:30.461+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:25:31.002+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:25:31.050+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:25:31.439+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:25:31.765+09:00  INFO 2524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-18T16:25:32.134+09:00  WARN 2524 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 76e719c1-e443-45ad-a70a-153737351a81
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-08-18T16:25:32.256+09:00  INFO 2524 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-18T16:25:32.274+09:00  INFO 2524 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@694529a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e9d3c8a, org.springframework.security.web.context.SecurityContextHolderFilter@3c26979a, org.springframework.security.web.header.HeaderWriterFilter@9d2df4f, org.springframework.web.filter.CorsFilter@5c5e87b6, org.springframework.security.web.csrf.CsrfFilter@789ac1f2, org.springframework.security.web.authentication.logout.LogoutFilter@1dd2877b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c40f7bc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2abe4132, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46bc8811, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@24007ff1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c71ca56, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d7bd774, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@674916b, org.springframework.security.web.access.ExceptionTranslationFilter@67aeae39, org.springframework.security.web.access.intercept.AuthorizationFilter@630e1fab]
+2023-08-18T16:25:32.365+09:00  INFO 2524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T16:25:32.441+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T16:25:32.457+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Started Application in 5.101 seconds (process running for 5.656)
+2023-08-18T16:25:32.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T16:25:32.466+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T16:25:32.466+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T16:25:32.467+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T16:25:32.467+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Port Number = 8080
+2023-08-18T16:25:32.467+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger (중괄호 안으로 값이 들어감)
+2023-08-18T16:25:32.468+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T16:25:32.468+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T16:25:32.469+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T16:25:32.469+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T16:25:32.469+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 40
+2023-08-18T16:25:32.572+09:00  INFO 2524 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 388002269242
+2023-08-18T16:25:32.604+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T16:25:32.604+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T16:25:32.607+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-08-18T16:34:00.251+09:00  INFO 2524 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2023-08-18T16:34:00.265+09:00  INFO 2524 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:34:00.266+09:00  INFO 2524 --- [Thread-5] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T16:34:00.306+09:00  INFO 2524 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:34:00.316+09:00  INFO 2524 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-08-18T16:34:00.319+09:00  INFO 2524 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-08-18T16:34:00.407+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:34:00.408+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:34:00.669+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:34:00.678+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:34:00.781+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:34:00.782+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:34:00.783+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:34:00.794+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:34:00.794+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 385 ms
+2023-08-18T16:34:00.814+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-08-18T16:34:00.816+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@49317cbb
+2023-08-18T16:34:00.817+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-08-18T16:34:00.817+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:34:00.853+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:34:00.857+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:34:00.857+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:34:00.864+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:34:00.891+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:34:00.985+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:34:01.039+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:34:01.171+09:00  INFO 2524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-18T16:34:01.241+09:00  INFO 2524 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-18T16:34:01.246+09:00  INFO 2524 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58fc5bed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c35f158, org.springframework.security.web.context.SecurityContextHolderFilter@302f7821, org.springframework.security.web.header.HeaderWriterFilter@7b00a3e7, org.springframework.web.filter.CorsFilter@546620cf, org.springframework.security.web.csrf.CsrfFilter@1f5a3562, org.springframework.security.web.authentication.logout.LogoutFilter@1cf89dd1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c5687a6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2c65fb25, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@602a75bc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@346e7d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e10aa63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52846509, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ab36967, org.springframework.security.web.access.ExceptionTranslationFilter@5ffe68c0, org.springframework.security.web.access.intercept.AuthorizationFilter@6e1a6d28]
+2023-08-18T16:34:01.312+09:00  INFO 2524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T16:34:01.321+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T16:34:01.327+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Started Application in 0.961 seconds (process running for 514.527)
+2023-08-18T16:34:01.328+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Port Number = 8080
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger (중괄호 안으로 값이 들어감)
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T16:34:01.329+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T16:34:01.330+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T16:34:01.330+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 21
+2023-08-18T16:34:01.333+09:00  INFO 2524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userDetailsService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-08-18T16:34:01.342+09:00  INFO 2524 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 388002269242
+2023-08-18T16:34:01.343+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T16:34:01.343+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T16:34:01.344+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-08-18T16:39:58.194+09:00  INFO 2524 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-18T16:39:58.224+09:00  INFO 2524 --- [Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:39:58.226+09:00  INFO 2524 --- [Thread-7] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T16:39:58.246+09:00  INFO 2524 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:39:58.247+09:00  INFO 2524 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-08-18T16:39:58.252+09:00  INFO 2524 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-08-18T16:39:58.324+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:39:58.325+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:39:58.550+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:39:58.556+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:39:58.657+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:39:58.658+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:39:58.659+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:39:58.673+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:39:58.673+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 347 ms
+2023-08-18T16:39:58.694+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-08-18T16:39:58.697+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@5b41fff7
+2023-08-18T16:39:58.697+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-08-18T16:39:58.697+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:39:58.745+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:39:58.749+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:39:58.750+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:39:58.758+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:39:58.787+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:39:58.808+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:39:58.864+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:39:59.002+09:00  INFO 2524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-18T16:39:59.087+09:00  INFO 2524 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-18T16:39:59.093+09:00  INFO 2524 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d88fd5e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f2d63ab, org.springframework.security.web.context.SecurityContextHolderFilter@18a8f0aa, org.springframework.security.web.header.HeaderWriterFilter@529b24f7, org.springframework.web.filter.CorsFilter@7c59d822, org.springframework.security.web.csrf.CsrfFilter@607b753c, org.springframework.security.web.authentication.logout.LogoutFilter@680443b8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e2bad89, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1939204e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7de75b6f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@25648b65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23c1a416, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@120e0264, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@572f3b80, org.springframework.security.web.access.ExceptionTranslationFilter@569cec56, org.springframework.security.web.access.intercept.AuthorizationFilter@5a101baf]
+2023-08-18T16:39:59.172+09:00  INFO 2524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T16:39:59.183+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T16:39:59.190+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Started Application in 0.897 seconds (process running for 872.389)
+2023-08-18T16:39:59.192+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T16:39:59.192+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T16:39:59.192+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T16:39:59.192+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T16:39:59.193+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Port Number = 8080
+2023-08-18T16:39:59.193+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger (중괄호 안으로 값이 들어감)
+2023-08-18T16:39:59.193+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T16:39:59.193+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T16:39:59.193+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T16:39:59.194+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T16:39:59.194+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 59
+2023-08-18T16:39:59.195+09:00  INFO 2524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T16:39:59.203+09:00  INFO 2524 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 388002269242
+2023-08-18T16:39:59.203+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T16:39:59.203+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T16:39:59.204+09:00  INFO 2524 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-08-18T16:40:00.609+09:00  INFO 2524 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-18T16:40:00.634+09:00  INFO 2524 --- [Thread-11] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:40:00.635+09:00  INFO 2524 --- [Thread-11] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T16:40:00.649+09:00  INFO 2524 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:00.650+09:00  INFO 2524 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-08-18T16:40:00.653+09:00  INFO 2524 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-08-18T16:40:00.732+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:40:00.733+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:40:00.936+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:40:00.943+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:40:01.029+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:40:01.029+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:40:01.030+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:40:01.040+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:40:01.040+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 306 ms
+2023-08-18T16:40:01.053+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-08-18T16:40:01.056+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@4c3c95ac
+2023-08-18T16:40:01.056+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-08-18T16:40:01.056+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:40:01.084+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:40:01.088+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:01.088+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:40:01.094+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:01.116+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:40:01.153+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:01.192+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:40:01.320+09:00  INFO 2524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-18T16:40:01.377+09:00  INFO 2524 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-18T16:40:01.382+09:00  INFO 2524 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43190c4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dc628b0, org.springframework.security.web.context.SecurityContextHolderFilter@47569c8b, org.springframework.security.web.header.HeaderWriterFilter@6476b851, org.springframework.web.filter.CorsFilter@6b3252ca, org.springframework.security.web.csrf.CsrfFilter@61df02cb, org.springframework.security.web.authentication.logout.LogoutFilter@2809c4a8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@331ea59f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@359f12f8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@56795b2a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17655274, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e0607f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64fa9a06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d895ecc, org.springframework.security.web.access.ExceptionTranslationFilter@31c170f6, org.springframework.security.web.access.intercept.AuthorizationFilter@55d6883d]
+2023-08-18T16:40:01.446+09:00  INFO 2524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T16:40:01.455+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T16:40:01.463+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Started Application in 0.767 seconds (process running for 874.663)
+2023-08-18T16:40:01.464+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T16:40:01.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T16:40:01.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T16:40:01.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T16:40:01.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Port Number = 8080
+2023-08-18T16:40:01.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger (중괄호 안으로 값이 들어감)
+2023-08-18T16:40:01.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T16:40:01.465+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T16:40:01.466+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T16:40:01.466+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T16:40:01.466+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 72
+2023-08-18T16:40:01.467+09:00  INFO 2524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T16:40:01.476+09:00  INFO 2524 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 388002269242
+2023-08-18T16:40:01.477+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T16:40:01.477+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T16:40:01.478+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-08-18T16:40:08.390+09:00  INFO 2524 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-18T16:40:08.399+09:00  INFO 2524 --- [Thread-15] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:40:08.399+09:00  INFO 2524 --- [Thread-15] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T16:40:08.457+09:00  INFO 2524 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:08.458+09:00  INFO 2524 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-08-18T16:40:08.465+09:00  INFO 2524 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2023-08-18T16:40:08.538+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:40:08.539+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:40:08.728+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:40:08.734+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:40:08.819+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:40:08.820+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:40:08.820+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:40:08.832+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:40:08.832+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 292 ms
+2023-08-18T16:40:08.845+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2023-08-18T16:40:08.847+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@3c6925e1
+2023-08-18T16:40:08.847+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2023-08-18T16:40:08.848+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:40:08.872+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:40:08.876+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:08.876+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:40:08.882+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:08.903+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:40:08.937+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:08.979+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:40:09.104+09:00  INFO 2524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-18T16:40:09.156+09:00  INFO 2524 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-18T16:40:09.161+09:00  INFO 2524 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d8b6874, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17f647e5, org.springframework.security.web.context.SecurityContextHolderFilter@555b8902, org.springframework.security.web.header.HeaderWriterFilter@6286d96f, org.springframework.web.filter.CorsFilter@1667c5e1, org.springframework.security.web.csrf.CsrfFilter@9b059c3, org.springframework.security.web.authentication.logout.LogoutFilter@7df86bcb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b9740ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5f065bac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6163d0c9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c576480, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e2eac2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b9fa611, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27eddc59, org.springframework.security.web.access.ExceptionTranslationFilter@30cca50a, org.springframework.security.web.access.intercept.AuthorizationFilter@669704b8]
+2023-08-18T16:40:09.214+09:00  INFO 2524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T16:40:09.222+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T16:40:09.227+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Started Application in 0.719 seconds (process running for 882.426)
+2023-08-18T16:40:09.228+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T16:40:09.228+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T16:40:09.228+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T16:40:09.228+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T16:40:09.228+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Port Number = 8080
+2023-08-18T16:40:09.228+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger (중괄호 안으로 값이 들어감)
+2023-08-18T16:40:09.229+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T16:40:09.229+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T16:40:09.229+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T16:40:09.229+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T16:40:09.229+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 38
+2023-08-18T16:40:09.230+09:00  INFO 2524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T16:40:09.239+09:00  INFO 2524 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 388002269242
+2023-08-18T16:40:09.239+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T16:40:09.239+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T16:40:09.240+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-08-18T16:40:47.294+09:00  INFO 2524 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-18T16:40:47.303+09:00  INFO 2524 --- [Thread-19] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:40:47.304+09:00  INFO 2524 --- [Thread-19] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T16:40:47.309+09:00  INFO 2524 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:47.310+09:00  INFO 2524 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2023-08-18T16:40:47.311+09:00  INFO 2524 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2023-08-18T16:40:47.384+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:40:47.384+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:40:47.602+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:40:47.619+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:40:47.721+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:40:47.722+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:40:47.722+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:40:47.734+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:40:47.734+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 349 ms
+2023-08-18T16:40:47.755+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2023-08-18T16:40:47.758+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@762802c5
+2023-08-18T16:40:47.758+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2023-08-18T16:40:47.758+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:40:47.791+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:40:47.795+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:47.795+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:40:47.801+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:48.058+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:40:48.091+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:48.128+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:40:48.143+09:00  INFO 2524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-18T16:40:48.190+09:00  WARN 2524 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 869cd6c6-58fa-4742-a2cb-38c13faae41b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-08-18T16:40:48.196+09:00  INFO 2524 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-18T16:40:48.200+09:00  INFO 2524 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b3c2c05, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fdd3e61, org.springframework.security.web.context.SecurityContextHolderFilter@6571cd76, org.springframework.security.web.header.HeaderWriterFilter@4064e2f9, org.springframework.web.filter.CorsFilter@5b123ee0, org.springframework.security.web.csrf.CsrfFilter@13c26256, org.springframework.security.web.authentication.logout.LogoutFilter@4227920c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ccd0ed4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4206f006, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3f24d09c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f2f6fb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6521c35c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2512ad77, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15d29f79, org.springframework.security.web.access.ExceptionTranslationFilter@1f7bf10e, org.springframework.security.web.access.intercept.AuthorizationFilter@71daeb1]
+2023-08-18T16:40:48.216+09:00  INFO 2524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T16:40:48.226+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T16:40:48.230+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Started Application in 0.876 seconds (process running for 921.43)
+2023-08-18T16:40:48.231+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T16:40:48.231+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Port Number = 8080
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger (중괄호 안으로 값이 들어감)
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T16:40:48.232+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 75
+2023-08-18T16:40:48.233+09:00  INFO 2524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-08-18T16:40:48.243+09:00  INFO 2524 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 388002269242
+2023-08-18T16:40:48.244+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T16:40:48.244+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T16:40:48.245+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-08-18T16:40:49.645+09:00  INFO 2524 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2023-08-18T16:40:49.654+09:00  INFO 2524 --- [Thread-23] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:40:49.655+09:00  INFO 2524 --- [Thread-23] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T16:40:49.660+09:00  INFO 2524 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:49.661+09:00  INFO 2524 --- [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2023-08-18T16:40:49.662+09:00  INFO 2524 --- [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2023-08-18T16:40:49.730+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:40:49.730+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:40:49.918+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:40:49.924+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:40:49.997+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:40:49.997+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:40:49.998+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:40:50.007+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:40:50.008+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 277 ms
+2023-08-18T16:40:50.019+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2023-08-18T16:40:50.022+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@65c157d1
+2023-08-18T16:40:50.022+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2023-08-18T16:40:50.022+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:40:50.042+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:40:50.046+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:50.046+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:40:50.051+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:40:50.069+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:40:50.134+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:50.170+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:40:50.291+09:00  WARN 2524 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+2023-08-18T16:40:50.291+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:40:50.291+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2023-08-18T16:40:50.293+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2023-08-18T16:40:50.293+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:40:50.300+09:00  INFO 2524 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T16:40:50.935+09:00 ERROR 2524 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:819) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:771) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at com.ktds.myspringboot.Application.main(Application.java:22) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:204) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:248) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.lambda$securityFilterChain$1(SecurityConfig.java:44) ~[classes/:?]
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1466) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.securityFilterChain(SecurityConfig.java:43) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$2(<generated>) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$2.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.10.jar:6.0.10]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+
+2023-08-18T16:42:28.273+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:42:28.273+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:42:28.463+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:42:28.470+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:42:28.560+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:42:28.562+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:42:28.562+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:42:28.573+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:42:28.573+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 299 ms
+2023-08-18T16:42:28.589+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2023-08-18T16:42:28.591+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@4faea1cd
+2023-08-18T16:42:28.591+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2023-08-18T16:42:28.591+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:42:28.615+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:42:28.619+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:42:28.619+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:42:28.626+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:42:28.644+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:42:28.766+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:42:28.812+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:42:28.838+09:00  INFO 2524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-08-18T16:42:28.921+09:00  WARN 2524 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8f9236d2-54c9-4e79-a09f-600dde65d8d7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-08-18T16:42:28.928+09:00  INFO 2524 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-08-18T16:42:28.934+09:00  INFO 2524 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b83fb3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@281ea2a3, org.springframework.security.web.context.SecurityContextHolderFilter@1ed1967f, org.springframework.security.web.header.HeaderWriterFilter@7a6cab23, org.springframework.web.filter.CorsFilter@21657bb4, org.springframework.security.web.csrf.CsrfFilter@6dbcfc4e, org.springframework.security.web.authentication.logout.LogoutFilter@5c61dcf3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3607eeaa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@709103a4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@301ce372, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@714c148e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14055767, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fbb98c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70990765, org.springframework.security.web.access.ExceptionTranslationFilter@7c00e8ac, org.springframework.security.web.access.intercept.AuthorizationFilter@17db885e]
+2023-08-18T16:42:28.954+09:00  INFO 2524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T16:42:28.961+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T16:42:28.967+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Started Application in 0.724 seconds (process running for 1022.166)
+2023-08-18T16:42:28.968+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T16:42:28.968+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T16:42:28.968+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T16:42:28.968+09:00  INFO 2524 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T16:42:28.968+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Port Number = 8080
+2023-08-18T16:42:28.968+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Logger 구현 클래스 이름 = org.apache.logging.slf4j.Log4jLogger (중괄호 안으로 값이 들어감)
+2023-08-18T16:42:28.968+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T16:42:28.969+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T16:42:28.969+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T16:42:28.969+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T16:42:28.969+09:00  INFO 2524 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 78
+2023-08-18T16:42:28.970+09:00  INFO 2524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T16:42:28.980+09:00  INFO 2524 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 388002269242
+2023-08-18T16:42:28.980+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T16:42:28.980+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T16:42:28.981+09:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-08-18T16:42:30.392+09:00  INFO 2524 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2023-08-18T16:42:30.400+09:00  INFO 2524 --- [Thread-27] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:42:30.401+09:00  INFO 2524 --- [Thread-27] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T16:42:30.405+09:00  INFO 2524 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:42:30.405+09:00  INFO 2524 --- [Thread-27] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2023-08-18T16:42:30.408+09:00  INFO 2524 --- [Thread-27] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2023-08-18T16:42:30.477+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:42:30.477+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:42:30.647+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:42:30.653+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:42:30.757+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:42:30.757+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:42:30.758+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:42:30.767+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:42:30.767+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 288 ms
+2023-08-18T16:42:30.793+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2023-08-18T16:42:30.796+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@7b9e89e4
+2023-08-18T16:42:30.796+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2023-08-18T16:42:30.796+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:42:30.824+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:42:30.827+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:42:30.827+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:42:30.834+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:42:30.850+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:42:30.889+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:42:30.942+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:42:31.067+09:00  WARN 2524 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+2023-08-18T16:42:31.067+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:42:31.068+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2023-08-18T16:42:31.069+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2023-08-18T16:42:31.070+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:42:31.075+09:00  INFO 2524 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T16:42:31.077+09:00 ERROR 2524 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:819) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:771) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at com.ktds.myspringboot.Application.main(Application.java:22) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:204) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:248) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.lambda$securityFilterChain$1(SecurityConfig.java:46) ~[classes/:?]
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1466) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.securityFilterChain(SecurityConfig.java:45) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$2(<generated>) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$2.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.10.jar:6.0.10]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+
+2023-08-18T16:43:17.881+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2524 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:43:17.881+09:00  INFO 2524 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:43:18.032+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:43:18.037+09:00  INFO 2524 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:43:18.124+09:00  INFO 2524 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:43:18.125+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:43:18.125+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:43:18.134+09:00  INFO 2524 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:43:18.134+09:00  INFO 2524 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 252 ms
+2023-08-18T16:43:18.152+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Starting...
+2023-08-18T16:43:18.154+09:00  INFO 2524 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-10 - Added connection org.mariadb.jdbc.Connection@2766d99b
+2023-08-18T16:43:18.154+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Start completed.
+2023-08-18T16:43:18.154+09:00  INFO 2524 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:43:18.177+09:00  INFO 2524 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:43:18.180+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:43:18.180+09:00  INFO 2524 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:43:18.185+09:00  INFO 2524 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:43:18.208+09:00  INFO 2524 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:43:18.276+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:43:18.324+09:00  WARN 2524 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:43:18.449+09:00  WARN 2524 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+2023-08-18T16:43:18.449+09:00  INFO 2524 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:43:18.449+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown initiated...
+2023-08-18T16:43:18.451+09:00  INFO 2524 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown completed.
+2023-08-18T16:43:18.451+09:00  INFO 2524 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:43:18.456+09:00  INFO 2524 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T16:43:18.458+09:00 ERROR 2524 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:819) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:771) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at com.ktds.myspringboot.Application.main(Application.java:22) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:204) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:248) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.lambda$securityFilterChain$1(SecurityConfig.java:46) ~[classes/:?]
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1466) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.securityFilterChain(SecurityConfig.java:45) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$2(<generated>) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$2.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.10.jar:6.0.10]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+
+2023-08-18T16:44:29.218+09:00  INFO 13848 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 13848 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:44:29.223+09:00  INFO 13848 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:44:29.261+09:00  INFO 13848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-18T16:44:29.261+09:00  INFO 13848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-18T16:44:30.041+09:00  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:44:30.086+09:00  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:44:30.675+09:00  INFO 13848 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:44:30.684+09:00  INFO 13848 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:44:30.684+09:00  INFO 13848 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:44:30.728+09:00  INFO 13848 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:44:30.730+09:00  INFO 13848 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1467 ms
+2023-08-18T16:44:30.819+09:00  INFO 13848 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-08-18T16:44:30.885+09:00  INFO 13848 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7daf2331
+2023-08-18T16:44:30.887+09:00  INFO 13848 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-08-18T16:44:30.896+09:00  INFO 13848 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:44:31.052+09:00  INFO 13848 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:44:31.090+09:00  INFO 13848 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-18T16:44:31.092+09:00  INFO 13848 --- [restartedMain] o.h.c.Environment                        : HHH000406: Using bytecode reflection optimizer
+2023-08-18T16:44:31.188+09:00  INFO 13848 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:44:31.281+09:00  INFO 13848 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:44:31.434+09:00  INFO 13848 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:44:31.873+09:00  INFO 13848 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:44:31.920+09:00  INFO 13848 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:44:32.223+09:00  WARN 13848 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:44:32.424+09:00  WARN 13848 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+2023-08-18T16:44:32.425+09:00  INFO 13848 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:44:32.427+09:00  INFO 13848 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-08-18T16:44:32.431+09:00  INFO 13848 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-08-18T16:44:32.432+09:00  INFO 13848 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:44:32.450+09:00  INFO 13848 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T16:44:32.462+09:00 ERROR 13848 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:819) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:771) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at com.ktds.myspringboot.Application.main(Application.java:22) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:204) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:248) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.lambda$securityFilterChain$1(SecurityConfig.java:46) ~[classes/:?]
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1466) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.securityFilterChain(SecurityConfig.java:45) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$0(<generated>) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$2.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.10.jar:6.0.10]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+
+2023-08-18T16:45:18.609+09:00  INFO 9240 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9240 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T16:45:18.614+09:00  INFO 9240 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T16:45:18.653+09:00  INFO 9240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-18T16:45:18.653+09:00  INFO 9240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-18T16:45:19.456+09:00  INFO 9240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T16:45:19.506+09:00  INFO 9240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2023-08-18T16:45:20.124+09:00  INFO 9240 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T16:45:20.133+09:00  INFO 9240 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T16:45:20.134+09:00  INFO 9240 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T16:45:20.177+09:00  INFO 9240 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T16:45:20.178+09:00  INFO 9240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1523 ms
+2023-08-18T16:45:20.266+09:00  INFO 9240 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-08-18T16:45:20.332+09:00  INFO 9240 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5508e87c
+2023-08-18T16:45:20.334+09:00  INFO 9240 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-08-18T16:45:20.342+09:00  INFO 9240 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T16:45:20.489+09:00  INFO 9240 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T16:45:20.526+09:00  INFO 9240 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-18T16:45:20.528+09:00  INFO 9240 --- [restartedMain] o.h.c.Environment                        : HHH000406: Using bytecode reflection optimizer
+2023-08-18T16:45:20.627+09:00  INFO 9240 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:45:20.714+09:00  INFO 9240 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T16:45:20.868+09:00  INFO 9240 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T16:45:21.286+09:00  INFO 9240 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T16:45:21.598+09:00  INFO 9240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:45:21.935+09:00  WARN 9240 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T16:45:22.129+09:00  WARN 9240 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+2023-08-18T16:45:22.130+09:00  INFO 9240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T16:45:22.132+09:00  INFO 9240 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-08-18T16:45:22.134+09:00  INFO 9240 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-08-18T16:45:22.136+09:00  INFO 9240 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T16:45:22.154+09:00  INFO 9240 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T16:45:22.168+09:00 ERROR 9240 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:819) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:771) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) [spring-boot-3.1.2.jar:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-3.1.2.jar:3.1.2]
+	at com.ktds.myspringboot.Application.main(Application.java:22) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.1.2.jar:3.1.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/ktds/myspringboot/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
+	at org.springframework.util.Assert.isTrue(Assert.java:122) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:204) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:248) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.lambda$securityFilterChain$1(SecurityConfig.java:46) ~[classes/:?]
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1466) ~[spring-security-config-6.1.2.jar:6.1.2]
+	at com.ktds.myspringboot.config.SecurityConfig.securityFilterChain(SecurityConfig.java:45) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$securityFilterChain$1(<generated>) ~[classes/:?]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$2.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.0.10.jar:6.0.10]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.0.10.jar:6.0.10]
+	at com.ktds.myspringboot.config.SecurityConfig$$SpringCGLIB$$0.securityFilterChain(<generated>) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1633) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1597) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1488) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1375) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:811) ~[spring-beans-6.0.10.jar:6.0.10]
+	... 23 more
+

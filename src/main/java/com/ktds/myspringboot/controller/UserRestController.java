@@ -6,6 +6,7 @@ import com.ktds.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,11 +32,13 @@ public class UserRestController {
 //    }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasAuthority('ROLE_USER')")
     public UserResDto getUserById(@PathVariable Long id){
         return userService.getUserById(id);
     }
 
     @GetMapping()
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public List<UserResDto> getUser() {
         return userService.getUsers();
     }
@@ -51,5 +54,11 @@ public class UserRestController {
         userService.deleteUser(id);
         return ResponseEntity.ok(id+" User가 삭제되었습니다.");
     }
+
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "Welcome this endpoint is not secure";
+    }
+
 
 }
