@@ -107,6 +107,12 @@
 			<artifactId>spring-boot-admin-starter-client</artifactId>
 		</dependency>
 
+		<!-- security 사용-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<!--actuator admin 설정-->
