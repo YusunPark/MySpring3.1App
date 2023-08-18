@@ -5324,3 +5324,530 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2023-08-18T10:18:30.938+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
 2023-08-18T10:18:30.938+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 8
 2023-08-18T10:18:30.939+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T10:47:38.572+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-18T10:47:38.581+09:00  INFO 9108 --- [Thread-41] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T10:47:38.584+09:00  INFO 9108 --- [Thread-41] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:47:38.584+09:00  INFO 9108 --- [Thread-41] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown initiated...
+2023-08-18T10:47:38.586+09:00  INFO 9108 --- [Thread-41] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown completed.
+2023-08-18T10:47:38.650+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T10:47:38.651+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T10:47:38.723+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T10:47:38.728+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T10:47:38.784+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T10:47:38.785+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T10:47:38.785+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T10:47:38.793+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T10:47:38.794+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 141 ms
+2023-08-18T10:47:38.798+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Starting...
+2023-08-18T10:47:38.801+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-12 - Added connection org.mariadb.jdbc.Connection@411e2a01
+2023-08-18T10:47:38.801+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Start completed.
+2023-08-18T10:47:38.801+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T10:47:38.810+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T10:47:38.812+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:47:38.812+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T10:47:38.817+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:47:38.833+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T10:47:38.852+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:47:38.857+09:00  WARN 9108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRestController' defined in file [C:\java\workspace\MySpring3.1App\target\classes\com\ktds\myspringboot\controller\UserRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.ktds.myspringboot.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-08-18T10:47:38.857+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:47:38.857+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown initiated...
+2023-08-18T10:47:38.858+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown completed.
+2023-08-18T10:47:38.858+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T10:47:38.860+09:00  INFO 9108 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T10:47:38.863+09:00 ERROR 9108 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.ktds.myspringboot.controller.UserRestController required a bean of type 'com.ktds.myspringboot.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.ktds.myspringboot.service.UserService' in your configuration.
+
+2023-08-18T10:50:28.491+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T10:50:28.491+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T10:50:28.577+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T10:50:28.583+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-18T10:50:28.636+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T10:50:28.637+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T10:50:28.637+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T10:50:28.645+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T10:50:28.645+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 153 ms
+2023-08-18T10:50:28.650+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-13 - Starting...
+2023-08-18T10:50:28.652+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-13 - Added connection org.mariadb.jdbc.Connection@1ed56811
+2023-08-18T10:50:28.652+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-13 - Start completed.
+2023-08-18T10:50:28.652+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T10:50:28.661+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T10:50:28.664+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:50:28.665+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T10:50:28.670+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:50:28.685+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T10:50:28.705+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:50:28.737+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T10:50:28.767+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T10:50:28.782+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T10:50:28.786+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T10:50:28.787+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.317 seconds (process running for 3086.517)
+2023-08-18T10:50:28.787+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T10:50:28.787+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T10:50:28.787+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T10:50:28.787+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T10:50:28.787+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T10:50:28.788+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T10:50:28.788+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T10:50:28.788+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T10:50:28.788+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 92
+2023-08-18T10:50:28.788+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T10:51:39.522+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-18T10:51:39.531+09:00  INFO 9108 --- [Thread-45] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T10:51:39.533+09:00  INFO 9108 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:51:39.534+09:00  INFO 9108 --- [Thread-45] c.z.h.HikariDataSource                   : HikariPool-13 - Shutdown initiated...
+2023-08-18T10:51:39.535+09:00  INFO 9108 --- [Thread-45] c.z.h.HikariDataSource                   : HikariPool-13 - Shutdown completed.
+2023-08-18T10:51:39.594+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T10:51:39.595+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T10:51:39.674+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T10:51:39.681+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-08-18T10:51:39.740+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T10:51:39.741+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T10:51:39.741+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T10:51:39.750+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T10:51:39.751+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 154 ms
+2023-08-18T10:51:39.756+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Starting...
+2023-08-18T10:51:39.758+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-14 - Added connection org.mariadb.jdbc.Connection@617aa608
+2023-08-18T10:51:39.759+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Start completed.
+2023-08-18T10:51:39.759+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T10:51:39.772+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T10:51:39.775+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:51:39.775+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T10:51:39.782+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:51:39.800+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T10:51:39.824+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:51:39.829+09:00  WARN 9108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRestController' defined in file [C:\java\workspace\MySpring3.1App\target\classes\com\ktds\myspringboot\controller\UserRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.ktds.myspringboot.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-08-18T10:51:39.829+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:51:39.830+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Shutdown initiated...
+2023-08-18T10:51:39.830+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Shutdown completed.
+2023-08-18T10:51:39.831+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T10:51:39.833+09:00  INFO 9108 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T10:51:39.837+09:00 ERROR 9108 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.ktds.myspringboot.controller.UserRestController required a bean of type 'com.ktds.myspringboot.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.ktds.myspringboot.service.UserService' in your configuration.
+
+2023-08-18T10:51:41.294+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T10:51:41.294+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T10:51:41.369+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T10:51:41.374+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T10:51:41.428+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T10:51:41.428+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T10:51:41.428+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T10:51:41.442+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T10:51:41.442+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 147 ms
+2023-08-18T10:51:41.446+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-15 - Starting...
+2023-08-18T10:51:41.449+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-15 - Added connection org.mariadb.jdbc.Connection@26e2daa9
+2023-08-18T10:51:41.449+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-15 - Start completed.
+2023-08-18T10:51:41.449+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T10:51:41.458+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T10:51:41.461+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:51:41.461+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T10:51:41.466+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:51:41.482+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T10:51:41.498+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:51:41.528+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T10:51:41.553+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T10:51:41.568+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T10:51:41.571+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T10:51:41.573+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.299 seconds (process running for 3159.304)
+2023-08-18T10:51:41.573+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T10:51:41.573+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T10:51:41.574+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T10:51:41.574+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T10:51:41.574+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T10:51:41.574+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T10:51:41.574+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T10:51:41.574+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T10:51:41.574+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 21
+2023-08-18T10:51:41.575+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T10:57:16.203+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-08-18T10:57:16.209+09:00  INFO 9108 --- [Thread-52] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T10:57:16.212+09:00  INFO 9108 --- [Thread-52] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:57:16.212+09:00  INFO 9108 --- [Thread-52] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown initiated...
+2023-08-18T10:57:16.214+09:00  INFO 9108 --- [Thread-52] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown completed.
+2023-08-18T10:57:16.278+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T10:57:16.278+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T10:57:16.349+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T10:57:16.354+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T10:57:16.416+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T10:57:16.417+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T10:57:16.417+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T10:57:16.425+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T10:57:16.425+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2023-08-18T10:57:16.431+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-16 - Starting...
+2023-08-18T10:57:16.433+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-16 - Added connection org.mariadb.jdbc.Connection@6df362aa
+2023-08-18T10:57:16.433+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-16 - Start completed.
+2023-08-18T10:57:16.433+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T10:57:16.445+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T10:57:16.448+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:57:16.448+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T10:57:16.454+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:57:16.471+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T10:57:16.490+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:57:16.503+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T10:57:16.527+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T10:57:16.558+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T10:57:16.562+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T10:57:16.566+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.315 seconds (process running for 3494.3)
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T10:57:16.567+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 27
+2023-08-18T10:57:16.568+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T10:58:27.259+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-08-18T10:58:27.267+09:00  INFO 9108 --- [Thread-59] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T10:58:27.269+09:00  INFO 9108 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:58:27.271+09:00  INFO 9108 --- [Thread-59] c.z.h.HikariDataSource                   : HikariPool-16 - Shutdown initiated...
+2023-08-18T10:58:27.273+09:00  INFO 9108 --- [Thread-59] c.z.h.HikariDataSource                   : HikariPool-16 - Shutdown completed.
+2023-08-18T10:58:27.334+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T10:58:27.335+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T10:58:27.414+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T10:58:27.419+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T10:58:27.471+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T10:58:27.472+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T10:58:27.472+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T10:58:27.482+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T10:58:27.482+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2023-08-18T10:58:27.487+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-17 - Starting...
+2023-08-18T10:58:27.489+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-17 - Added connection org.mariadb.jdbc.Connection@5bcc9ed7
+2023-08-18T10:58:27.489+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-17 - Start completed.
+2023-08-18T10:58:27.489+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T10:58:27.498+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T10:58:27.501+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:58:27.501+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T10:58:27.506+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T10:58:27.519+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T10:58:27.535+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T10:58:27.567+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T10:58:27.592+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T10:58:27.607+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T10:58:27.611+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T10:58:27.612+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.3 seconds (process running for 3565.346)
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T10:58:27.613+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 44
+2023-08-18T10:58:27.614+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T10:58:55.945+09:00  INFO 9108 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T10:58:55.945+09:00  INFO 9108 --- [http-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T10:58:55.946+09:00  INFO 9108 --- [http-nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-08-18T11:03:21.355+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-18T11:03:21.365+09:00  INFO 9108 --- [Thread-63] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T11:03:21.365+09:00  INFO 9108 --- [Thread-63] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T11:03:21.367+09:00  INFO 9108 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:03:21.368+09:00  INFO 9108 --- [Thread-63] c.z.h.HikariDataSource                   : HikariPool-17 - Shutdown initiated...
+2023-08-18T11:03:21.371+09:00  INFO 9108 --- [Thread-63] c.z.h.HikariDataSource                   : HikariPool-17 - Shutdown completed.
+2023-08-18T11:03:21.439+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T11:03:21.439+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T11:03:21.509+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T11:03:21.514+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-18T11:03:21.567+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T11:03:21.568+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T11:03:21.568+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T11:03:21.578+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T11:03:21.578+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+2023-08-18T11:03:21.582+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-18 - Starting...
+2023-08-18T11:03:21.585+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-18 - Added connection org.mariadb.jdbc.Connection@213412d7
+2023-08-18T11:03:21.585+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-18 - Start completed.
+2023-08-18T11:03:21.585+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T11:03:21.595+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T11:03:21.598+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:03:21.598+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T11:03:21.603+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:03:21.618+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T11:03:21.638+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:03:21.670+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T11:03:21.698+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T11:03:21.716+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T11:03:21.720+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T11:03:21.722+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.307 seconds (process running for 3859.458)
+2023-08-18T11:03:21.722+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T11:03:21.723+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 54
+2023-08-18T11:03:21.724+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T11:03:44.541+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-18T11:03:44.549+09:00  INFO 9108 --- [Thread-67] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T11:03:44.551+09:00  INFO 9108 --- [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:03:44.552+09:00  INFO 9108 --- [Thread-67] c.z.h.HikariDataSource                   : HikariPool-18 - Shutdown initiated...
+2023-08-18T11:03:44.553+09:00  INFO 9108 --- [Thread-67] c.z.h.HikariDataSource                   : HikariPool-18 - Shutdown completed.
+2023-08-18T11:03:44.618+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T11:03:44.618+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T11:03:44.706+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T11:03:44.720+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-08-18T11:03:44.783+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T11:03:44.784+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T11:03:44.785+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T11:03:44.794+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T11:03:44.795+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 176 ms
+2023-08-18T11:03:44.800+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-19 - Starting...
+2023-08-18T11:03:44.802+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-19 - Added connection org.mariadb.jdbc.Connection@3a80093f
+2023-08-18T11:03:44.803+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-19 - Start completed.
+2023-08-18T11:03:44.803+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T11:03:44.814+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T11:03:44.818+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:03:44.818+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T11:03:44.824+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:03:44.842+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T11:03:44.862+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:03:44.867+09:00  WARN 9108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRestController' defined in file [C:\java\workspace\MySpring3.1App\target\classes\com\ktds\myspringboot\controller\UserRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.ktds.myspringboot.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-08-18T11:03:44.867+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:03:44.868+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-19 - Shutdown initiated...
+2023-08-18T11:03:44.868+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-19 - Shutdown completed.
+2023-08-18T11:03:44.869+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T11:03:44.871+09:00  INFO 9108 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T11:03:44.875+09:00 ERROR 9108 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.ktds.myspringboot.controller.UserRestController required a bean of type 'com.ktds.myspringboot.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.ktds.myspringboot.service.UserService' in your configuration.
+
+2023-08-18T11:03:46.323+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T11:03:46.323+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T11:03:46.388+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T11:03:46.393+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T11:03:46.441+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T11:03:46.441+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T11:03:46.441+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T11:03:46.450+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T11:03:46.450+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 126 ms
+2023-08-18T11:03:46.454+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-20 - Starting...
+2023-08-18T11:03:46.456+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-20 - Added connection org.mariadb.jdbc.Connection@1dd74a19
+2023-08-18T11:03:46.456+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-20 - Start completed.
+2023-08-18T11:03:46.456+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T11:03:46.467+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T11:03:46.470+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:03:46.470+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T11:03:46.475+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:03:46.488+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T11:03:46.504+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:03:46.536+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T11:03:46.562+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T11:03:46.579+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T11:03:46.583+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T11:03:46.584+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.278 seconds (process running for 3884.32)
+2023-08-18T11:03:46.585+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T11:03:46.585+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T11:03:46.585+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T11:03:46.585+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T11:03:46.586+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T11:03:46.586+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T11:03:46.586+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T11:03:46.586+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T11:03:46.586+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 30
+2023-08-18T11:03:46.586+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T11:04:03.291+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-08-18T11:04:03.298+09:00  INFO 9108 --- [Thread-71] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T11:04:03.300+09:00  INFO 9108 --- [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:04:03.301+09:00  INFO 9108 --- [Thread-71] c.z.h.HikariDataSource                   : HikariPool-20 - Shutdown initiated...
+2023-08-18T11:04:03.302+09:00  INFO 9108 --- [Thread-71] c.z.h.HikariDataSource                   : HikariPool-20 - Shutdown completed.
+2023-08-18T11:04:03.365+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T11:04:03.365+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T11:04:03.444+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T11:04:03.450+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-18T11:04:03.510+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T11:04:03.510+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T11:04:03.510+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T11:04:03.519+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T11:04:03.519+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 153 ms
+2023-08-18T11:04:03.524+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-21 - Starting...
+2023-08-18T11:04:03.526+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-21 - Added connection org.mariadb.jdbc.Connection@4cdeb21f
+2023-08-18T11:04:03.526+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-21 - Start completed.
+2023-08-18T11:04:03.526+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T11:04:03.537+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T11:04:03.540+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:04:03.540+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T11:04:03.548+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:04:03.569+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T11:04:03.590+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:04:03.632+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T11:04:03.682+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T11:04:03.707+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T11:04:03.712+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T11:04:03.714+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.375 seconds (process running for 3901.451)
+2023-08-18T11:04:03.715+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T11:04:03.715+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T11:04:03.715+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T11:04:03.715+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T11:04:03.716+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T11:04:03.716+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T11:04:03.716+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T11:04:03.716+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T11:04:03.716+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 16
+2023-08-18T11:04:03.717+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T11:04:05.152+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-08-18T11:04:05.160+09:00  INFO 9108 --- [Thread-78] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T11:04:05.161+09:00  INFO 9108 --- [Thread-78] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:04:05.162+09:00  INFO 9108 --- [Thread-78] c.z.h.HikariDataSource                   : HikariPool-21 - Shutdown initiated...
+2023-08-18T11:04:05.165+09:00  INFO 9108 --- [Thread-78] c.z.h.HikariDataSource                   : HikariPool-21 - Shutdown completed.
+2023-08-18T11:04:05.227+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T11:04:05.227+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T11:04:05.291+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T11:04:05.296+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T11:04:05.343+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T11:04:05.344+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T11:04:05.344+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T11:04:05.352+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T11:04:05.352+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 124 ms
+2023-08-18T11:04:05.356+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-22 - Starting...
+2023-08-18T11:04:05.358+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-22 - Added connection org.mariadb.jdbc.Connection@6f265384
+2023-08-18T11:04:05.358+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-22 - Start completed.
+2023-08-18T11:04:05.359+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T11:04:05.367+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T11:04:05.369+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:04:05.369+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T11:04:05.374+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:04:05.387+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T11:04:05.403+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:04:05.432+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T11:04:05.456+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T11:04:05.474+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T11:04:05.478+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T11:04:05.479+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.271 seconds (process running for 3903.215)
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T11:04:05.480+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 86
+2023-08-18T11:04:05.481+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-18T11:04:09.059+09:00  INFO 9108 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-18T11:04:09.059+09:00  INFO 9108 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-18T11:04:09.059+09:00  INFO 9108 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2023-08-18T11:05:21.296+09:00  INFO 9108 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-18T11:05:21.302+09:00  INFO 9108 --- [Thread-82] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T11:05:21.302+09:00  INFO 9108 --- [Thread-82] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-18T11:05:21.304+09:00  INFO 9108 --- [Thread-82] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:05:21.304+09:00  INFO 9108 --- [Thread-82] c.z.h.HikariDataSource                   : HikariPool-22 - Shutdown initiated...
+2023-08-18T11:05:21.305+09:00  INFO 9108 --- [Thread-82] c.z.h.HikariDataSource                   : HikariPool-22 - Shutdown completed.
+2023-08-18T11:05:21.373+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T11:05:21.373+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T11:05:21.457+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T11:05:21.463+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-18T11:05:21.525+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T11:05:21.526+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T11:05:21.526+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T11:05:21.537+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T11:05:21.537+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 163 ms
+2023-08-18T11:05:21.542+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-23 - Starting...
+2023-08-18T11:05:21.544+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-23 - Added connection org.mariadb.jdbc.Connection@5dc35ab
+2023-08-18T11:05:21.544+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-23 - Start completed.
+2023-08-18T11:05:21.544+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T11:05:21.556+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T11:05:21.559+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:05:21.559+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T11:05:21.565+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:05:21.582+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T11:05:21.600+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:05:21.605+09:00  WARN 9108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userRestController' defined in file [C:\java\workspace\MySpring3.1App\target\classes\com\ktds\myspringboot\controller\UserRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.ktds.myspringboot.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-08-18T11:05:21.605+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:05:21.605+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-23 - Shutdown initiated...
+2023-08-18T11:05:21.606+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-23 - Shutdown completed.
+2023-08-18T11:05:21.606+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-18T11:05:21.608+09:00  INFO 9108 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-18T11:05:21.611+09:00 ERROR 9108 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.ktds.myspringboot.controller.UserRestController required a bean of type 'com.ktds.myspringboot.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.ktds.myspringboot.service.UserService' in your configuration.
+
+2023-08-18T11:05:23.063+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 9108 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-18T11:05:23.063+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-18T11:05:23.137+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T11:05:23.142+09:00  INFO 9108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-18T11:05:23.201+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-18T11:05:23.201+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-18T11:05:23.201+09:00  INFO 9108 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-18T11:05:23.213+09:00  INFO 9108 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-18T11:05:23.213+09:00  INFO 9108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 149 ms
+2023-08-18T11:05:23.217+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-24 - Starting...
+2023-08-18T11:05:23.220+09:00  INFO 9108 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-24 - Added connection org.mariadb.jdbc.Connection@ffcb29
+2023-08-18T11:05:23.220+09:00  INFO 9108 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-24 - Start completed.
+2023-08-18T11:05:23.220+09:00  INFO 9108 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-18T11:05:23.229+09:00  INFO 9108 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T11:05:23.232+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:05:23.232+09:00  INFO 9108 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T11:05:23.237+09:00  INFO 9108 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T11:05:23.249+09:00  INFO 9108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-18T11:05:23.266+09:00  INFO 9108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T11:05:23.296+09:00  WARN 9108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-18T11:05:23.319+09:00  WARN 9108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-18T11:05:23.333+09:00  INFO 9108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-18T11:05:23.337+09:00  INFO 9108 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-18T11:05:23.338+09:00  INFO 9108 --- [restartedMain] c.k.m.Application                        : Started Application in 0.291 seconds (process running for 3981.075)
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-18T11:05:23.339+09:00  INFO 9108 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 8
+2023-08-18T11:05:23.340+09:00  INFO 9108 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

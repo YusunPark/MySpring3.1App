@@ -81,4 +81,15 @@ public class UserService {
 
         return modelMapper.map(user, UserResDto.class);
     }
+
+    public void deleteUser(Long id) {
+        // id -> entity
+        User user = userRepository.findById(id)
+                .orElseThrow(() ->
+                        new BusinessException(id + " User Not Found", HttpStatus.NOT_FOUND));
+
+        // entity 삭제
+        userRepository.delete(user);
+    }
+
 }
