@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -28,11 +29,15 @@ public class MyRunner implements ApplicationRunner {
     @Resource(name="myCustomer") // Bean의 이름으로 찾는다. Autowired + Qualifier 합친거
     Customer customer;
 
+    @Autowired
+    Environment environment;
+
     private Logger logger = LoggerFactory.getLogger(MyRunner.class);
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        logger.debug("Logger 구현 클래스 이름 = {} (중괄호 안으로 값이 들어감)", logger.getClass().getName());
+        logger.info("Port Number = {}", environment.getProperty("local.server.port"));
+        logger.info("Logger 구현 클래스 이름 = {} (중괄호 안으로 값이 들어감)", logger.getClass().getName());
 
         logger.info("VM Argument = " + args.containsOption("foo")); // false
         logger.info("Program Argument = " + args.containsOption("bar")); // true
