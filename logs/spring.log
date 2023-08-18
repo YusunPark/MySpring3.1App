@@ -3883,3 +3883,723 @@ Caused by: java.lang.IllegalArgumentException: object is not an instance of decl
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.10.jar:6.0.10]
 	... 22 more
 
+2023-08-17T16:23:13.892+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:23:13.897+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:23:13.934+09:00  INFO 2796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-17T16:23:13.934+09:00  INFO 2796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-17T16:23:14.445+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:23:14.496+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:23:15.075+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:23:15.086+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:23:15.086+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:23:15.137+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:23:15.138+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1202 ms
+2023-08-17T16:23:15.166+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-08-17T16:23:15.239+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@2bc5ada8
+2023-08-17T16:23:15.240+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-08-17T16:23:15.250+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:23:15.345+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:23:15.385+09:00  INFO 2796 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-17T16:23:15.387+09:00  INFO 2796 --- [restartedMain] o.h.c.Environment                        : HHH000406: Using bytecode reflection optimizer
+2023-08-17T16:23:15.485+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:23:15.586+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:23:15.758+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:23:16.185+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:23:16.223+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:23:16.290+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:23:16.497+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:23:16.772+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:23:16.799+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:23:16.808+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 3.273 seconds (process running for 3.829)
+2023-08-17T16:23:16.810+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:23:16.810+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:23:16.811+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:23:16.811+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:23:16.811+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:23:16.812+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:23:16.812+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:23:16.812+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:23:16.812+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 39
+2023-08-17T16:23:33.498+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-08-17T16:23:33.510+09:00  INFO 2796 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T16:23:33.515+09:00  INFO 2796 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:23:33.517+09:00  INFO 2796 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-08-17T16:23:33.520+09:00  INFO 2796 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-08-17T16:23:33.584+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:23:33.584+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:23:33.748+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:23:33.756+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:23:33.861+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:23:33.862+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:23:33.862+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:23:33.874+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:23:33.875+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 289 ms
+2023-08-17T16:23:33.886+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-08-17T16:23:33.888+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@37c7e6c6
+2023-08-17T16:23:33.888+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-08-17T16:23:33.888+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:23:33.907+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:23:33.911+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:23:33.912+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:23:33.919+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:23:33.947+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:23:33.978+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:23:34.001+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:23:34.060+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:23:34.124+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:23:34.131+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:23:34.133+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.584 seconds (process running for 21.154)
+2023-08-17T16:23:34.134+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:23:34.135+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:23:34.135+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:23:34.135+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:23:34.135+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:23:34.135+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:23:34.135+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:23:34.135+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:23:34.136+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 5
+2023-08-17T16:23:34.137+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T16:23:35.560+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-08-17T16:23:35.570+09:00  INFO 2796 --- [Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T16:23:35.573+09:00  INFO 2796 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:23:35.574+09:00  INFO 2796 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-08-17T16:23:35.576+09:00  INFO 2796 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-08-17T16:23:35.639+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:23:35.639+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:23:35.762+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:23:35.770+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:23:35.854+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:23:35.855+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:23:35.855+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:23:35.865+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:23:35.866+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 225 ms
+2023-08-17T16:23:35.873+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-08-17T16:23:35.875+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@40e3ab
+2023-08-17T16:23:35.876+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-08-17T16:23:35.876+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:23:35.890+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:23:35.894+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:23:35.894+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:23:35.902+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:23:35.926+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:23:35.944+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:23:35.961+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:23:35.999+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:23:36.047+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:23:36.051+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:23:36.053+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.45 seconds (process running for 23.075)
+2023-08-17T16:23:36.054+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:23:36.055+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 29
+2023-08-17T16:23:36.056+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T16:34:38.862+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T16:34:38.872+09:00  INFO 2796 --- [Thread-11] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T16:34:38.876+09:00  INFO 2796 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:34:38.876+09:00  INFO 2796 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-08-17T16:34:38.879+09:00  INFO 2796 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-08-17T16:34:38.949+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:34:38.949+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:34:39.058+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:34:39.066+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:34:39.137+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:34:39.138+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:34:39.138+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:34:39.148+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:34:39.148+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 197 ms
+2023-08-17T16:34:39.154+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-08-17T16:34:39.157+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@61f8ddb0
+2023-08-17T16:34:39.157+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-08-17T16:34:39.157+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:34:39.171+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:34:39.174+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:34:39.175+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:34:39.181+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:34:39.203+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:34:39.226+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:34:39.241+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:34:39.278+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:34:39.321+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:34:39.326+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:34:39.328+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.417 seconds (process running for 686.35)
+2023-08-17T16:34:39.329+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:34:39.329+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:34:39.329+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:34:39.329+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:34:39.330+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:34:39.330+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:34:39.330+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:34:39.330+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:34:39.330+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 6
+2023-08-17T16:34:39.331+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T16:35:12.347+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T16:35:12.355+09:00  INFO 2796 --- [Thread-15] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T16:35:12.357+09:00  INFO 2796 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:35:12.358+09:00  INFO 2796 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-08-17T16:35:12.360+09:00  INFO 2796 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2023-08-17T16:35:12.427+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:35:12.427+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:35:12.537+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:35:12.544+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:35:12.623+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:35:12.624+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:35:12.625+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:35:12.636+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:35:12.637+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
+2023-08-17T16:35:12.643+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2023-08-17T16:35:12.646+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@19068b
+2023-08-17T16:35:12.646+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2023-08-17T16:35:12.646+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:35:12.660+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:35:12.664+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:35:12.665+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:35:12.671+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:35:12.697+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:35:12.815+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:35:12.838+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:35:12.884+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:35:12.939+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:35:12.944+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:35:12.947+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.554 seconds (process running for 719.969)
+2023-08-17T16:35:12.948+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:35:12.949+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:35:12.949+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:35:12.949+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:35:12.950+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:35:12.950+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:35:12.950+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:35:12.950+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:35:12.950+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 39
+2023-08-17T16:35:12.951+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T16:37:46.910+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T16:37:46.916+09:00  INFO 2796 --- [Thread-19] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T16:37:46.918+09:00  INFO 2796 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:37:46.918+09:00  INFO 2796 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2023-08-17T16:37:46.921+09:00  INFO 2796 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2023-08-17T16:37:46.985+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:37:46.985+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:37:47.086+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:37:47.093+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:37:47.153+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:37:47.154+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:37:47.154+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:37:47.163+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:37:47.163+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 177 ms
+2023-08-17T16:37:47.168+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2023-08-17T16:37:47.170+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@36112345
+2023-08-17T16:37:47.170+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2023-08-17T16:37:47.170+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:37:47.180+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:37:47.184+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:37:47.184+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:37:47.189+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:37:47.207+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:37:47.238+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:37:47.254+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:37:47.283+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:37:47.322+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:37:47.325+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:37:47.327+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.372 seconds (process running for 874.349)
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:37:47.328+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:37:47.329+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 91
+2023-08-17T16:37:47.329+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T16:57:20.388+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T16:57:20.395+09:00  INFO 2796 --- [Thread-23] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T16:57:20.397+09:00  INFO 2796 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:57:20.397+09:00  INFO 2796 --- [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2023-08-17T16:57:20.400+09:00  INFO 2796 --- [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2023-08-17T16:57:20.464+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:57:20.464+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:57:20.558+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:57:20.564+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:57:20.624+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:57:20.624+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:57:20.625+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:57:20.633+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:57:20.634+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2023-08-17T16:57:20.639+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2023-08-17T16:57:20.641+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@5494ca74
+2023-08-17T16:57:20.641+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2023-08-17T16:57:20.641+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:57:20.654+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:57:20.657+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:57:20.657+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:57:20.663+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:57:20.682+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:57:20.744+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:57:20.781+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:57:20.808+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:57:20.824+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:57:20.828+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:57:20.830+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.396 seconds (process running for 2047.852)
+2023-08-17T16:57:20.830+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:57:20.831+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 17
+2023-08-17T16:57:20.832+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T16:58:15.521+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-17T16:58:15.531+09:00  INFO 2796 --- [Thread-27] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T16:58:15.533+09:00  INFO 2796 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:58:15.533+09:00  INFO 2796 --- [Thread-27] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2023-08-17T16:58:15.535+09:00  INFO 2796 --- [Thread-27] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2023-08-17T16:58:15.595+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T16:58:15.595+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T16:58:15.681+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T16:58:15.688+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-17T16:58:15.747+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T16:58:15.747+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T16:58:15.747+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T16:58:15.756+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T16:58:15.756+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
+2023-08-17T16:58:15.763+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2023-08-17T16:58:15.765+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.mariadb.jdbc.Connection@27b30e9
+2023-08-17T16:58:15.765+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2023-08-17T16:58:15.765+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T16:58:15.775+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T16:58:15.778+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:58:15.778+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T16:58:15.784+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T16:58:15.802+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T16:58:15.849+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T16:58:15.863+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T16:58:15.895+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T16:58:15.938+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T16:58:15.943+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T16:58:15.945+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.376 seconds (process running for 2102.966)
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T16:58:15.946+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 65
+2023-08-17T16:58:15.947+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:04:49.853+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T17:04:49.862+09:00  INFO 2796 --- [Thread-31] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:04:49.865+09:00  INFO 2796 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:04:49.866+09:00  INFO 2796 --- [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2023-08-17T17:04:49.869+09:00  INFO 2796 --- [Thread-31] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2023-08-17T17:04:49.931+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:04:49.931+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:04:50.025+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:04:50.031+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:04:50.096+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:04:50.097+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:04:50.097+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:04:50.106+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:04:50.106+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 174 ms
+2023-08-17T17:04:50.111+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2023-08-17T17:04:50.113+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.mariadb.jdbc.Connection@23b773ac
+2023-08-17T17:04:50.114+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2023-08-17T17:04:50.114+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:04:50.124+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:04:50.127+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:04:50.128+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:04:50.133+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:04:50.150+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:04:50.192+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:04:50.248+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:04:50.286+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:04:50.307+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:04:50.311+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:04:50.313+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.408 seconds (process running for 2497.334)
+2023-08-17T17:04:50.313+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:04:50.313+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:04:50.313+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:04:50.313+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:04:50.314+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:04:50.314+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:04:50.314+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:04:50.314+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:04:50.314+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 85
+2023-08-17T17:04:50.315+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:08:17.348+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T17:08:17.358+09:00  INFO 2796 --- [Thread-35] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:08:17.360+09:00  INFO 2796 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:08:17.360+09:00  INFO 2796 --- [Thread-35] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2023-08-17T17:08:17.363+09:00  INFO 2796 --- [Thread-35] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2023-08-17T17:08:17.423+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:08:17.424+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:08:17.513+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:08:17.519+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:08:17.577+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:08:17.577+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:08:17.578+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:08:17.586+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:08:17.586+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 161 ms
+2023-08-17T17:08:17.591+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Starting...
+2023-08-17T17:08:17.593+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-10 - Added connection org.mariadb.jdbc.Connection@3cf7857
+2023-08-17T17:08:17.593+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Start completed.
+2023-08-17T17:08:17.593+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:08:17.606+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:08:17.608+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:08:17.608+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:08:17.614+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:08:17.631+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:08:17.814+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:08:17.854+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:08:17.883+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:08:17.901+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:08:17.905+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:08:17.907+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.511 seconds (process running for 2704.929)
+2023-08-17T17:08:17.907+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:08:17.907+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:08:17.907+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:08:17.907+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:08:17.908+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:08:17.908+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:08:17.908+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:08:17.908+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:08:17.908+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 48
+2023-08-17T17:08:17.909+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:09:15.603+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-17T17:09:15.612+09:00  INFO 2796 --- [Thread-39] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:09:15.615+09:00  INFO 2796 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:09:15.615+09:00  INFO 2796 --- [Thread-39] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown initiated...
+2023-08-17T17:09:15.617+09:00  INFO 2796 --- [Thread-39] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown completed.
+2023-08-17T17:09:15.676+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:09:15.676+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:09:15.751+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:09:15.756+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:09:15.809+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:09:15.810+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:09:15.810+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:09:15.818+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:09:15.819+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 142 ms
+2023-08-17T17:09:15.823+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Starting...
+2023-08-17T17:09:15.826+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-11 - Added connection org.mariadb.jdbc.Connection@77258d6
+2023-08-17T17:09:15.826+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Start completed.
+2023-08-17T17:09:15.826+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:09:15.835+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:09:15.838+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:09:15.838+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:09:15.844+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:09:15.859+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:09:15.995+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:09:16.031+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:09:16.055+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:09:16.074+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:09:16.080+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:09:16.081+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.43 seconds (process running for 2763.103)
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:09:16.082+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 27
+2023-08-17T17:09:16.083+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:09:17.504+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T17:09:17.512+09:00  INFO 2796 --- [Thread-43] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:09:17.514+09:00  INFO 2796 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:09:17.514+09:00  INFO 2796 --- [Thread-43] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown initiated...
+2023-08-17T17:09:17.517+09:00  INFO 2796 --- [Thread-43] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown completed.
+2023-08-17T17:09:17.572+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:09:17.572+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:09:17.645+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:09:17.650+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:09:17.911+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:09:17.912+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:09:17.912+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:09:17.922+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:09:17.922+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 349 ms
+2023-08-17T17:09:17.927+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Starting...
+2023-08-17T17:09:17.929+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-12 - Added connection org.mariadb.jdbc.Connection@6981acea
+2023-08-17T17:09:17.929+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Start completed.
+2023-08-17T17:09:17.929+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:09:17.938+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:09:17.942+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:09:17.942+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:09:17.947+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:09:17.964+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:09:18.082+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:09:18.115+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:09:18.142+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:09:18.158+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:09:18.164+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:09:18.165+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.616 seconds (process running for 2765.187)
+2023-08-17T17:09:18.166+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:09:18.166+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:09:18.166+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:09:18.166+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:09:18.166+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:09:18.167+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:09:18.167+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:09:18.167+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:09:18.167+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 43
+2023-08-17T17:09:18.167+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:11:58.352+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-17T17:11:58.361+09:00  INFO 2796 --- [Thread-47] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:11:58.364+09:00  INFO 2796 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:11:58.364+09:00  INFO 2796 --- [Thread-47] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown initiated...
+2023-08-17T17:11:58.367+09:00  INFO 2796 --- [Thread-47] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown completed.
+2023-08-17T17:11:58.424+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:11:58.424+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:11:58.516+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:11:58.521+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:11:58.573+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:11:58.574+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:11:58.574+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:11:58.583+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:11:58.583+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 158 ms
+2023-08-17T17:11:58.587+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-13 - Starting...
+2023-08-17T17:11:58.589+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-13 - Added connection org.mariadb.jdbc.Connection@f835d9c
+2023-08-17T17:11:58.589+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-13 - Start completed.
+2023-08-17T17:11:58.589+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:11:58.598+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:11:58.601+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:11:58.601+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:11:58.607+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:11:58.623+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:11:58.734+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:11:58.762+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:11:58.788+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:11:58.803+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:11:58.807+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:11:58.808+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.406 seconds (process running for 2925.83)
+2023-08-17T17:11:58.809+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:11:58.809+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:11:58.809+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:11:58.809+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:11:58.809+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:11:58.809+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:11:58.809+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:11:58.810+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:11:58.810+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 62
+2023-08-17T17:11:58.810+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:12:00.238+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-08-17T17:12:00.246+09:00  INFO 2796 --- [Thread-51] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:12:00.249+09:00  INFO 2796 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:12:00.249+09:00  INFO 2796 --- [Thread-51] c.z.h.HikariDataSource                   : HikariPool-13 - Shutdown initiated...
+2023-08-17T17:12:00.251+09:00  INFO 2796 --- [Thread-51] c.z.h.HikariDataSource                   : HikariPool-13 - Shutdown completed.
+2023-08-17T17:12:00.317+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:12:00.317+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:12:00.389+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:12:00.395+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:12:00.453+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:12:00.453+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:12:00.454+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:12:00.462+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:12:00.463+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 145 ms
+2023-08-17T17:12:00.468+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Starting...
+2023-08-17T17:12:00.470+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-14 - Added connection org.mariadb.jdbc.Connection@704071f7
+2023-08-17T17:12:00.470+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Start completed.
+2023-08-17T17:12:00.470+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:12:00.480+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:12:00.483+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:12:00.484+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:12:00.489+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:12:00.504+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:12:00.635+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:12:00.670+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:12:00.697+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:12:00.714+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:12:00.717+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:12:00.719+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.424 seconds (process running for 2927.74)
+2023-08-17T17:12:00.719+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:12:00.719+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:12:00.719+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:12:00.719+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:12:00.720+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:12:00.720+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:12:00.720+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:12:00.720+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:12:00.720+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 86
+2023-08-17T17:12:00.720+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:12:47.646+09:00  INFO 2796 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-17T17:12:47.647+09:00  INFO 2796 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-08-17T17:12:47.647+09:00  INFO 2796 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2023-08-17T17:12:47.665+09:00 ERROR 2796 --- [http-nio-8080-exec-1] c.k.m.e.a.DefaultExceptionAdvice         : Request method 'GET' is not supported
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:505) ~[spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275) [spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) [spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) [spring-webmvc-6.0.10.jar:6.0.10]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) [spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) [tomcat-embed-core-10.1.11.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) [spring-webmvc-6.0.10.jar:6.0.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) [tomcat-embed-core-10.1.11.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.0.10.jar:6.0.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.0.10.jar:6.0.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+
+2023-08-17T17:12:47.692+09:00  WARN 2796 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2023-08-17T17:18:49.124+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-17T17:18:49.137+09:00  INFO 2796 --- [Thread-55] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:18:49.137+09:00  INFO 2796 --- [Thread-55] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-08-17T17:18:49.139+09:00  INFO 2796 --- [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:18:49.140+09:00  INFO 2796 --- [Thread-55] c.z.h.HikariDataSource                   : HikariPool-14 - Shutdown initiated...
+2023-08-17T17:18:49.141+09:00  INFO 2796 --- [Thread-55] c.z.h.HikariDataSource                   : HikariPool-14 - Shutdown completed.
+2023-08-17T17:18:49.205+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:18:49.205+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:18:49.301+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:18:49.307+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:18:49.381+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:18:49.382+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:18:49.382+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:18:49.392+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:18:49.393+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2023-08-17T17:18:49.399+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-15 - Starting...
+2023-08-17T17:18:49.402+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-15 - Added connection org.mariadb.jdbc.Connection@60c254ec
+2023-08-17T17:18:49.403+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-15 - Start completed.
+2023-08-17T17:18:49.403+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:18:49.416+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:18:49.421+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:18:49.421+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:18:49.427+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:18:49.446+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:18:49.720+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:18:49.759+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:18:49.796+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:18:49.816+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:18:49.821+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:18:49.823+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.646 seconds (process running for 3336.844)
+2023-08-17T17:18:49.824+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:18:49.825+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:18:49.825+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:18:49.825+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:18:49.825+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:18:49.825+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:18:49.826+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:18:49.826+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:18:49.827+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 69
+2023-08-17T17:18:49.827+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:23:02.219+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-17T17:23:02.228+09:00  INFO 2796 --- [Thread-59] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:23:02.231+09:00  INFO 2796 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:23:02.231+09:00  INFO 2796 --- [Thread-59] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown initiated...
+2023-08-17T17:23:02.234+09:00  INFO 2796 --- [Thread-59] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown completed.
+2023-08-17T17:23:02.299+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:23:02.299+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:23:02.373+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:23:02.378+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2023-08-17T17:23:02.442+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:23:02.442+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:23:02.443+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:23:02.452+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:23:02.452+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 152 ms
+2023-08-17T17:23:02.458+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-16 - Starting...
+2023-08-17T17:23:02.460+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-16 - Added connection org.mariadb.jdbc.Connection@69353308
+2023-08-17T17:23:02.460+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-16 - Start completed.
+2023-08-17T17:23:02.460+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:23:02.472+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:23:02.475+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:23:02.476+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:23:02.481+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:23:02.497+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:23:02.782+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:23:02.800+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:23:02.836+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:23:02.877+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:23:02.881+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:23:02.882+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.609 seconds (process running for 3589.904)
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:23:02.883+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 94
+2023-08-17T17:23:02.884+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:24:12.634+09:00  INFO 2796 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-08-17T17:24:12.643+09:00  INFO 2796 --- [Thread-63] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-08-17T17:24:12.645+09:00  INFO 2796 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:24:12.646+09:00  INFO 2796 --- [Thread-63] c.z.h.HikariDataSource                   : HikariPool-16 - Shutdown initiated...
+2023-08-17T17:24:12.648+09:00  INFO 2796 --- [Thread-63] c.z.h.HikariDataSource                   : HikariPool-16 - Shutdown completed.
+2023-08-17T17:24:12.710+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Starting Application using Java 17 with PID 2796 (C:\java\workspace\MySpring3.1App\target\classes started by User in C:\java\workspace\MySpring3.1App)
+2023-08-17T17:24:12.710+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : The following 1 profile is active: "prod"
+2023-08-17T17:24:12.795+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-17T17:24:12.800+09:00  INFO 2796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-08-17T17:24:12.860+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-08-17T17:24:12.861+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-08-17T17:24:12.861+09:00  INFO 2796 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-17T17:24:12.870+09:00  INFO 2796 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-08-17T17:24:12.870+09:00  INFO 2796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 159 ms
+2023-08-17T17:24:12.875+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-17 - Starting...
+2023-08-17T17:24:12.877+09:00  INFO 2796 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-17 - Added connection org.mariadb.jdbc.Connection@4f4fdc59
+2023-08-17T17:24:12.877+09:00  INFO 2796 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-17 - Start completed.
+2023-08-17T17:24:12.877+09:00  INFO 2796 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-08-17T17:24:12.887+09:00  INFO 2796 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-17T17:24:12.891+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:24:12.891+09:00  INFO 2796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-17T17:24:12.897+09:00  INFO 2796 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-17T17:24:12.912+09:00  INFO 2796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-17T17:24:12.931+09:00  INFO 2796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:24:12.943+09:00  WARN 2796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-17T17:24:12.985+09:00  WARN 2796 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-08-17T17:24:13.012+09:00  INFO 2796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-17T17:24:13.016+09:00  INFO 2796 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-17T17:24:13.017+09:00  INFO 2796 --- [restartedMain] c.k.m.Application                        : Started Application in 0.338 seconds (process running for 3660.039)
+2023-08-17T17:24:13.018+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DataSource 구현 클래스명 com.zaxxer.hikari.HikariDataSource
+2023-08-17T17:24:13.018+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB Product Name = MariaDB
+2023-08-17T17:24:13.018+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-08-17T17:24:13.018+09:00  INFO 2796 --- [restartedMain] c.k.m.r.DatabaseRunner                   : DB UserName = boot
+2023-08-17T17:24:13.018+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : VM Argument = false
+2023-08-17T17:24:13.018+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : Program Argument = true
+2023-08-17T17:24:13.018+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : ******환경변수 문자열 설정*********
+2023-08-17T17:24:13.019+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.name : 스프링 ProMode
+2023-08-17T17:24:13.019+09:00  INFO 2796 --- [restartedMain] c.k.m.r.MyRunner                         : myboot.age : 58
+2023-08-17T17:24:13.019+09:00  INFO 2796 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-17T17:26:57.892+09:00  INFO 2796 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-17T17:26:57.893+09:00  INFO 2796 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-17 - Shutdown initiated...
+2023-08-17T17:26:57.895+09:00  INFO 2796 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-17 - Shutdown completed.

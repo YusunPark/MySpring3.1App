@@ -3,12 +3,22 @@ package com.ktds.myspringboot.service;
 import com.ktds.myspringboot.dto.UserReqDto;
 import com.ktds.myspringboot.dto.UserResDto;
 import com.ktds.myspringboot.entity.User;
+import com.ktds.myspringboot.exception.BusinessException;
 import com.ktds.myspringboot.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.data.annotation.ReadOnlyProperty;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
 
 @Service
 @Transactional
@@ -29,6 +39,32 @@ public class UserService {
         // entity -> resDto
         return modelMapper.map(saveUser, UserResDto.class);
 
+    }
+
+    @Transactional(readOnly = true)
+    public UserResDto getUserById(Long id) {
+        // id -> entity
+        User user = userRepository.findById(id)
+                .orElseThrow(() ->
+                        new BusinessException(id + " User Not Found", HttpStatus.NOT_FOUND));
+
+        // entity -> resDto
+        return modelMapper.map(user, UserResDto.class);
+    }
+
+    @Transactional(readOnly = true)
+    public List<UserResDto> getUsers() {
+        // db에서 entity를 List로 불러온다.
+        List<User> users = userRepository.findAll();
+
+        // entity -> Stream<UserResDto>
+        // Stream으로 바꿔서 하는 것이 간단 (Stream의 Function인터페이스 사용)
+        Stream<UserResDto> userResDtoStream = users.stream()
+                .map(user -> modelMapper.map(user, UserResDto.class));
+
+        // Stream<User> -> List<UserResDto>
+        // collect는 위에 userResDtoStream만들때 map뒤에서 체이닝 해도된다.
+        return userResDtoStream.collect(toList());
     }
 
 }

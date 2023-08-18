@@ -10,5 +10,6 @@ import java.util.Optional;
 public interface UserRepository extends ListCrudRepository<User, Long> {
     List<User> findByName(String name);         // 중복가능하니 List
     Optional<User> findByEmail(String email);   // null일 수 있으니 optional
+//    Optional<User> findById(Long id);   // null일 수 있으니 optional
 
 }

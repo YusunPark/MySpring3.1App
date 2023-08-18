@@ -5,10 +5,9 @@ import com.ktds.myspringboot.dto.UserResDto;
 import com.ktds.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -19,7 +18,23 @@ public class UserRestController {
     @PostMapping
     // @RequestBody : post에서 json으로 데이터를 받을 때 필요
     public UserResDto saveUser(@RequestBody UserReqDto userReqDto){
+
         return userService.saveUser(userReqDto);
     }
 
+//    이렇게 이름을 바꿔주는 것도 가능
+//    @GetMapping("/{myId}")
+//    public UserResDto getUserById(@PathVariable("myId") Long id){
+//
+//    }
+
+    @GetMapping("/{id}")
+    public UserResDto getUserById(@PathVariable Long id){
+        return userService.getUserById(id);
+    }
+
+    @GetMapping()
+    public List<UserResDto> getUser() {
+        return userService.getUsers();
+    }
 }
